@@ -19,19 +19,19 @@ trait InstallInertiaBootstrapStack
 //        NPM Package
         $this->updateNodePackages(function ($package) {
             return [
-                    "bootstrap @popperjs/core",
-                    "--save-dev sass",
-                    "bootstrap-icons",
-                    "vite",
-                    "laravel-vite-plugin",
-                    "@vitejs/plugin-vue",
-                    "@laravel/vite-plugin-wayfinder"
+                    "bootstrap @popperjs/core" => "^5.3.8",
+                    "--save-dev sass" => "^1.69.5",
+                    "bootstrap-icons" => "^1.13.1 ",
+                    "vite" => "^7.3.1",
+                    "laravel-vite-plugin" => "^2.0.1",
+                    "@vitejs/plugin-vue" => "^6.0.3",
+                    "@laravel/vite-plugin-wayfinder" => "^0.1.7"
                 ] + $package;
         });
 
         // Providers...
-        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/inertia-vue-bootstrap/app/Providers',
-            app_path('Providers'));
+//        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/inertia-vue-bootstrap/app/Providers',
+//            app_path('Providers'));
 
         // Controllers...
         (new Filesystem)->ensureDirectoryExists(app_path('Http/Controllers'));
