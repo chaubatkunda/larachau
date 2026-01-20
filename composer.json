@@ -3,7 +3,7 @@
   "description": "Minimal Laravel authentication scaffolding Inertia Vue Bootstrap starter kit",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "keywords": [
     "larachau",
     "laravel",
