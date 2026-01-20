@@ -19,14 +19,14 @@ class InstallCommand extends Command implements PromptsForMissingInput
 //        $this->info('Install Larachau...');
 //        $this->publishStubs($filesystem);
 //        return self::SUCCESS;
-        return $this->installInertiaBootstrapStack();
+        return $this->installInertiaVueBootstrap();
     }
 
-    protected function publishStubs(Filesystem $filesystem): void
-    {
-        $source = __DIR__.'/../../stubs/inertia-vue-bootstrap';
-        $destination = base_path();
-        $filesystem->copyDirectory($source, $destination);
-    }
+//    protected function publishStubs(Filesystem $filesystem): void
+//    {
+//        $source = __DIR__.'/../../stubs/inertia-vue-bootstrap';
+//        $destination = base_path();
+//        $filesystem->copyDirectory($source, $destination);
+//    }
 
 }
