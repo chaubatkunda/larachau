@@ -3,7 +3,7 @@
   "description": "Minimal Laravel authentication scaffolding Inertia Vue Bootstrap starter kit",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "keywords": [
     "larachau",
     "laravel",
@@ -36,7 +36,8 @@
     "illuminate/filesystem": "^11.0|^12.0",
     "illuminate/support": "^11.0|^12.0",
     "illuminate/validation": "^11.0|^12.0",
-    "inertiajs/inertia-laravel": "^0.2.5"
+    "inertiajs/inertia-laravel": "^0.2.5",
+    "symfony/console": "^7.0"
   },
   "required-dev": {
     "laravel/framework": "^11.0|^12.0"

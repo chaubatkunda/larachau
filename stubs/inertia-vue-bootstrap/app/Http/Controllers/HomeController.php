@@ -4,7 +4,7 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
         return inertia('Home');
     }
