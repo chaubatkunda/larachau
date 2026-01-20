@@ -3,15 +3,14 @@
   "description": "Minimal Laravel authentication scaffolding Inertia Vue Bootstrap starter kit",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "larachau",
-    "larachau/ui",
     "laravel",
     "inertia",
     "vue",
     "bootstrap",
-    "starter-kit"
+    "ui"
   ],
   "autoload": {
     "psr-4": {
