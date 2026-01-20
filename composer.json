@@ -6,7 +6,12 @@
   "version": "1.0.2",
   "keywords": [
     "larachau",
-    "larachau/ui"
+    "larachau/ui",
+    "laravel",
+    "inertia",
+    "vue",
+    "bootstrap",
+    "starter-kit"
   ],
   "autoload": {
     "psr-4": {
