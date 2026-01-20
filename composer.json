@@ -1,0 +1,39 @@
+{
+  "name": "larachau/ui",
+  "description": "Inertia Vue Bootstrap starter kit for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keyword": [
+    "larachau",
+    "larachau/ui"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Larachau\\Ui\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Chau Batkunda",
+      "email": "maniklusi31@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Larachau\\Larachau\\LarachauServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/console": "^10.0",
+    "illuminate/support": "^10.0",
+    "illuminate/filesystem": "^10.0",
+    "inertiajs/inertia-laravel": "^0.2.5"
+  },
+  "required-dev": {
+    "laravel/framework": "^11.0|^12.0"
+  }
+}
