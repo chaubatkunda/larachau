@@ -19,8 +19,10 @@ trait InstallInertiaBootstrapStack
 //        NPM Package
         $this->updateNodePackages(function ($package) {
             return [
-                    "bootstrap @popperjs/core" => "^5.3.8",
-                    "--save-dev sass" => "^1.69.5",
+                    "bootstrap" => "^5.3.8",
+                    "@popperjs/core" => "^2.11.8",
+                    "@inertiajs/vue3" => "^2.3.7",
+                    "sass" => "^1.69.5",
                     "bootstrap-icons" => "^1.13.1 ",
                     "vite" => "^7.3.1",
                     "laravel-vite-plugin" => "^2.0.1",
@@ -53,13 +55,21 @@ trait InstallInertiaBootstrapStack
 //            app_path('Http/Middleware/HandleInertiaRequests.php'));
 
         // Views...
-//        copy(__DIR__.'/../../stubs/inertia-vue/resources/views/app.blade.php', resource_path('views/app.blade.php'));
+        copy(__DIR__.'/../../stubs/inertia-vue-bootstrap/resources/views/app.blade.php',
+            resource_path('views/app.blade.php'));
 
-//        @unlink(resource_path('views/welcome.blade.php'));
+        @unlink(resource_path('views/welcome.blade.php'));
 
-        // Components + Pages...
-//        (new Filesystem)->ensureDirectoryExists(resource_path('js/Components'));
-//        (new Filesystem)->ensureDirectoryExists(resource_path('js/Layouts'));
-//        (new Filesystem)->ensureDirectoryExists(resource_path('js/Pages'));
+//         Components + Pages...
+        (new Filesystem)->ensureDirectoryExists(resource_path('js/Components'));
+        (new Filesystem)->ensureDirectoryExists(resource_path('js/Layouts'));
+        (new Filesystem)->ensureDirectoryExists(resource_path('js/Pages'));
+
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/inertia-vue-bootstrap/resources/js/Components',
+            resource_path('js/Components'));
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/inertia-vue-bootstrap/resources/js/Layouts',
+            resource_path('js/Layouts'));
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/inertia-vue-bootstrap/resources/js/Pages',
+            resource_path('js/Pages'));
     }
 }
