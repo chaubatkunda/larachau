@@ -3,7 +3,7 @@
   "description": "Minimal Laravel authentication scaffolding Inertia Vue Bootstrap starter kit",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "larachau",
     "larachau/ui",
@@ -27,7 +27,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Larachau\\Larachau\\LarachauServiceProvider"
+        "Larachau\\Ui\\LarachauServiceProvider"
       ]
     }
   },

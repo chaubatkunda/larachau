@@ -12,7 +12,7 @@ class InstallCommand extends Command
     protected $signature = 'larachau:install';
     protected $description = 'Install Larachau';
 
-    public function handle(Filesystem $filesystem)
+    public function handle(Filesystem $filesystem): void
     {
         $this->info('Install Larachau...');
         $this->publishStubs($filesystem);
